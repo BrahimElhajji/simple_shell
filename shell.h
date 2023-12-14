@@ -17,11 +17,11 @@ char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 int _strlen(const char *s);
 char *_strdup(char *src);
-int _strncmp( const char * s1, const char * s2, size_t n );
+int _strncmp(const char *s1, const char *s2, size_t n);
 
-char * read_user_input();
-void display_prompt();
-char ** tokenize_string(char *input_line);
+char *read_user_input(void);
+void display_prompt(void);
+char **tokenize_string(char *input_line);
 int execute_command(char **args, int c, char **envp);
 void khwi(char **massfoufa);
 char *_getenv(const char *env_var);

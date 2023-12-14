@@ -2,6 +2,7 @@
 
 /**
  * print_f - new printf function
+ * @s: a string
  */
 
 void print_f(const char *s)
