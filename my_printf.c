@@ -7,5 +7,5 @@
 
 void print_f(const char *s)
 {
-	write(STDOUT_FILENO, s, _strlen(s));
+	write(STDERR_FILENO, s, _strlen(s));
 }

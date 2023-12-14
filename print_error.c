@@ -13,14 +13,14 @@ void error(char *key, int chip, char **argv)
 {
 	char *twichia;
 
-	print_f(argv[0]);
+	print_f(key);
 	print_f(": ");
 	twichia = me_itoa(chip);
 	print_f(twichia);
 	free(twichia);
 	print_f(": ");
-	print_f(key);
-	print_f(": command not found\n");
+	print_f(argv[0]);
+	print_f(": not found\n");
 }
 
 /**

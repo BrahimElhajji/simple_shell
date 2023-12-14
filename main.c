@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 {
 	char *user_input, **command = NULL;
 
-	int status = 0, c = 0;
+	int status = 0, c = 1;
 	(void)argc;
 
 

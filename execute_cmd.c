@@ -32,7 +32,7 @@ int execute_command(char **args, int c, char **envp)
 			execve(cmd, args, envp);
 		else
 		{
-			error(args[0], c, envp);
+			error(envp[0], c, args);
 			khwi(args);
 			exit(127);
 		}
