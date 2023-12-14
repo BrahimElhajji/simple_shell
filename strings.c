@@ -1,20 +1,20 @@
 #include "shell.h"
 /**
  * _strdup - implementation of strdup
- * @s: s parametre
+ * @src: src parametre
  * Return: Success
  */
-char *_strdup(char *s)
+char *_strdup(char *src)
 {
-	char *string;
-	char *pointer;
-	int i;
+	char *string, *pointer;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-		string = malloc(i + 1);
+	while (src[i])
+		i++;
+	string = malloc(i + 1);
 	pointer = string;
-	while (*s)
-		*pointer++ = *s++;
+	while (*src)
+		*pointer++ = *src++;
 	*pointer = '\0';
 	return (string);
 }
