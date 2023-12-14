@@ -44,4 +44,5 @@ char **tokenize_string(char *input_line)
 	}
 	tokens_array[index] = NULL;
 	free(line_copy2);
+	return (tokens_array);
 }
