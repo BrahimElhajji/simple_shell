@@ -30,6 +30,7 @@ char *ara_lcommand(char *amr);
 char *me_itoa(unsigned int n);
 void error(char *key, int chip, char **argv);
 void print_f(const char *s);
+void print_fd(const char *s);
 void built_in(char **envp);
 
 #endif
