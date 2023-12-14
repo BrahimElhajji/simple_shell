@@ -26,10 +26,9 @@ int main(int argc, char **argv)
 			if (!command)
 				continue;
 
-
+			free(user_input);
 			status = execute_command(command, c, argv);
 
-			free(user_input);
 		} else
 		{
 			if (isatty(STDIN_FILENO))
