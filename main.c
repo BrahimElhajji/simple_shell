@@ -6,11 +6,12 @@
  * Return: Success
  */
 
-int main(int argc, char **argv)
+int main(int argc, char **argv, char **envp)
 {
 	char *user_input, **command = NULL;
 	int status = 0, c = 1;
 	(void)argc;
+	(void)argv;
 
 	while (1)
 	{
@@ -28,7 +29,8 @@ int main(int argc, char **argv)
 				exit(status);
 			}
 			else if (_strcmp(command[0], "env") == 0)
-			{
+			{	khwi(command);
+				free(user_input);
 				built_in(envp);
 			} else
 			{
