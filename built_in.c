@@ -16,7 +16,7 @@ void built_in(char **envp)
 
 	for (i = 0; envp[i] != NULL; i++)
 	{
-		print_f(envp[i]);
-		print_f("\n");
+		print_fd(envp[i]);
+		print_fd("\n");
 	}
 }
