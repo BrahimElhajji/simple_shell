@@ -13,6 +13,7 @@
 #define DELIMITER " \t\r\n\a"
 extern char **environ;
 
+int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 int _strlen(const char *s);
@@ -29,5 +30,6 @@ char *ara_lcommand(char *amr);
 char *me_itoa(unsigned int n);
 void error(char *key, int chip, char **argv);
 void print_f(const char *s);
+void env_builtin(char **envp);
 
 #endif
