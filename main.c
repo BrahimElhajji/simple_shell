@@ -2,7 +2,7 @@
 /**
  * main - entry point
  * @argc: argc parametre
- * @argv: argv paramtre
+ * @argv: argv parametre
  * Return: Success
  */
 
